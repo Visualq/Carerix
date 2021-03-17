@@ -89,10 +89,6 @@ class Carerix_Api_Rest_ResponseTransformer_CustomResponseTransformer2 extends Ca
      */
     public function xmlToArray($data)
     {
-        if (version_compare(PHP_VERSION, '5.2.11', '>=')) {
-            $libxml_disable_entity_loader = libxml_disable_entity_loader(true);
-        }
-
         libxml_use_internal_errors(true);
         $this->adapter = simplexml_load_string(
             $data,
@@ -109,10 +105,6 @@ class Carerix_Api_Rest_ResponseTransformer_CustomResponseTransformer2 extends Ca
         $json = json_encode($this->adapter);
         $array = json_decode($json, true);
         $array = $this->normalizeXmlArray($array);
-
-        if (version_compare(PHP_VERSION, '5.2.11', '>=')) {
-            libxml_disable_entity_loader($libxml_disable_entity_loader);
-        }
 
         return $array;
     }
