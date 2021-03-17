@@ -23,8 +23,6 @@
  * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  */
 
-require_once 'Carerix/php5.3.php';
-
 class Carerix_Api_Rest_EntityGenerator {
 
     const API_ENDPOINT = 'https://api.carerix.com';

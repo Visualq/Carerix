@@ -46,8 +46,6 @@
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
 
-require_once 'Carerix/php5.3.php';
-
 class Carerix_Api_Rest_Manager
 {
     const COLLECTION_ROOT_ELEMENT = 'array';

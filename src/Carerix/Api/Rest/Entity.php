@@ -47,8 +47,6 @@
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
 
-require_once 'Carerix/php5.3.php';
-
 /**
  * Port to PHP 5.2 w/ custom functionality, methods and docs
  * @author        Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
