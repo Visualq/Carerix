@@ -1,0 +1,25 @@
+{
+    "name": "visualq/carerix",
+    "description": "Carerix migrated library from PEAR",
+    "type": "library",
+    "license": "LGPL-2.1-or-later",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Andrey Yakubovskiy",
+            "role": "Lead developer"
+        },
+        {
+            "name": "Wim Wisselink",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.3.0"
+    }
+}
