@@ -1,21 +1,22 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 /*
  *  $Id$
  *
@@ -37,7 +38,7 @@
 */
 
 
-if(!class_exists('Carerix_Api_Rest_EntityConfiguration')) {
+if (!class_exists('Carerix_Api_Rest_EntityConfiguration')) {
     require_once 'Carerix/Api/Rest/EntityConfiguration.php';
 }
 
@@ -53,9 +54,9 @@ if(!class_exists('Carerix_Api_Rest_EntityConfiguration')) {
 
 /**
  * Port to PHP 5.2 w/ docs
+ *
  * @author         Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  */
-
 abstract class Carerix_Api_Rest_URLGenerator_AbstractURLGenerator
 {
     /**

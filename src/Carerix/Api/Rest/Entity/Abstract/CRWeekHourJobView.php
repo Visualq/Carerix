@@ -1,33 +1,35 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 
 /**
  * @ THIS FILE WAS GENERATED AUTOMATICALLY USING REST API ENTITY DESCRIBE SERVICE.
  * DO NOT MODIFY IT. YOUR CHANGES WILL BE LOST. INSTEAD MODIFY CONCRETE
  * IMPLEMENTATION OF THIS CLASS IF NECESSARY.
- * @category Carerix
+ *
+ * @category  Carerix
  * @licence http://www.opensource.org/licenses/lgpl-license.php LGPL
- * @link http://development.wiki.carerix.com/index.php/CxRest
+ * @link      http://development.wiki.carerix.com/index.php/CxRest
  * @copyright Copyright 2011-2018 Carerix (http://www.carerix.com). All rights
  * reserved.
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
- * @version Mon, 19 Nov 2018 11:56:01 +0200
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @version   Mon, 19 Nov 2018 11:56:01 +0200
  * @method Carerix_Api_Rest_Entity_Abstract_CRWeekHourJobView setHoursTotal()
  * setHoursTotal(float $value) Set hoursTotal attribute. Provides a fluent
  * interface.
@@ -85,8 +87,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRWeekHourJobView extends Careri
     const ENTITY = 'CRWeekHourJobView';
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -94,8 +96,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRWeekHourJobView extends Careri
     public $hoursTotal = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 0
@@ -103,8 +105,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRWeekHourJobView extends Careri
     public $creationDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 0
@@ -112,95 +114,95 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRWeekHourJobView extends Careri
     public $modificationDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 0
-     * @width 8
+     * @width       8
      */
     public $dateString = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $isEmpty = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRJob
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRJob")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRJob
-     * @to_many 0
+     * @to_many            0
      * @name toJob
      */
     public $toJob = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CREmployee
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CREmployee")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CREmployee
-     * @to_many 0
+     * @to_many            0
      * @name toEmployee
      */
     public $toEmployee = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRWeekHour")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRWeekHour
-     * @to_many 1
+     * @to_many            1
      * @name allWeekHours
-     * @inverseName toWeekHourJobView
+     * @inverseName        toWeekHourJobView
      */
     public $allWeekHours = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRWeekHourView
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRWeekHourView")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRWeekHourView
-     * @to_many 0
+     * @to_many            0
      * @name toWeekHourView
      */
     public $toWeekHourView = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRAttachment")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRAttachment
-     * @to_many 1
+     * @to_many            1
      * @name attachments
      */
     public $attachments = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRWeekHourComment")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRWeekHourComment
-     * @to_many 1
+     * @to_many            1
      * @name comments
      */
     public $comments = null;
@@ -211,6 +213,4 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRWeekHourJobView extends Careri
         $entityConfiguration->setIdentifierKey("weekHourJobViewID");
         $entityConfiguration->setName("CRWeekHourJobView");
     }
-
-
 }

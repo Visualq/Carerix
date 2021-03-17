@@ -1,29 +1,30 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 /**
- * @category Carerix
+ * @category  Carerix
  * @licence http://www.opensource.org/licenses/lgpl-license.php LGPL
- * @link http://www.carerix.com
+ * @link      http://www.carerix.com
  * @copyright Copyright 2011 Carerix (http://www.carerix.com). All rights reserved.
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
- * @version Fri, 23 Sep 2011 10:20:51 +0300
- * 
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @version   Fri, 23 Sep 2011 10:20:51 +0300
+ *
  * @method Carerix_Api_Rest_Entity_CRDataNode setTag()
  * setTag(string $tag) Set Tag attribute. Provides a fluent
  * interface.
@@ -32,35 +33,35 @@
 class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstract_CRDataNode
 {
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @type NSString
      * @allows_null 1
      */
-    public $value = null;      
+    public $value = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @type NSString
      * @allows_null 1
      */
     public $sortOrder = null;
-    
+
     /**
-     * @access private
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 20
+     * @width       20
      */
     public $indicationColor = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @type NSString
      * @allows_null 1
@@ -68,10 +69,10 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
     public $tag = null;
 
     /**
-     * @cx_field true
+     * @cx_field    true
      * @value_class NSArray
      * @allows_null 1
-     * @access private
+     * @access      private
      */
     public $tags = null;
 
@@ -81,6 +82,7 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
      * Provides a fluent interface.
      *
      * @param string $value [optional]
+     *
      * @return Carerix_Api_Rest_Entity_CRDataNode
      */
     public function setValue($value)
@@ -97,14 +99,15 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
     public function getValue()
     {
         return $this->value;
-    }    
-    
+    }
+
     /**
      * Set value.
      *
      * Provides a fluent interface.
      *
      * @param string $value [optional]
+     *
      * @return Carerix_Api_Rest_Entity_CRDataNode
      */
     public function setSortOrder($value)
@@ -112,7 +115,7 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
         $this->sortOrder = $value;
         return $this;
     }
-    
+
     /**
      * Get sort order.
      *
@@ -129,6 +132,7 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
      * Provides a fluent interface.
      *
      * @param string $value [optional]
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CRStatusInfo
      */
     public function setIndicationColor($value)
@@ -136,7 +140,7 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
         $this->indicationColor = $value;
         return $this;
     }
-    
+
     /**
      * Get indicationColor.
      *
@@ -146,16 +150,17 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->indicationColor;
     }
-        
+
     /**
-     * Get data-nodes by type. 
-     * 
-     * @param array $parameters 
-     * @param integer $hydrate [optional] hydration method 
+     * Get data-nodes by type.
+     *
+     * @param array   $parameters
+     * @param integer $hydrate [optional] hydration method
+     *
      * @return Carerix_Api_Rest_Entity_Collection
-     * 
+     *
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
-     */        
+     */
     public static function listBy(array $parameters, $hydrate = null)
     {
         $action = 'list-by';
@@ -166,7 +171,7 @@ class Carerix_Api_Rest_Entity_CRDataNode extends Carerix_Api_Rest_Entity_Abstrac
             Carerix_Api_Rest_Client::GET,
             null,
             null,
-            $hydrate            
+            $hydrate
         );
-    }      
+    }
 }

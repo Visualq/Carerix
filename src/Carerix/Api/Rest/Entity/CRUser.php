@@ -1,29 +1,30 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 /**
- * @category Carerix
+ * @category  Carerix
  * @licence http://www.opensource.org/licenses/lgpl-license.php LGPL
- * @link http://www.carerix.com
+ * @link      http://www.carerix.com
  * @copyright Copyright 2011 Carerix (http://www.carerix.com). All rights reserved.
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
- * @version Fri, 23 Sep 2011 09:35:49 +0300
- * 
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @version   Fri, 23 Sep 2011 09:35:49 +0300
+ *
  * @method Carerix_Api_Rest_Entity_CRUser setSyncmail()
  * setSyncmail(integer $value) Set syncmail attribute. Provides a
  * fluent interface.
@@ -40,29 +41,29 @@
 class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CRUser
 {
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $hasPhoto = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $photo = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var Carerix_Api_Rest_DataType_NSArray|array
      * @value_class NSArray
      * @allows_null 1
@@ -70,46 +71,46 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     public $photoList = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var integer
      * @value_class NSNumber
      * @allows_null 0
      */
     public $userRoleID;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name owner
      */
     public $owner = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      */
     public $lessFormalNameString;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      */
     public $emailAddressPrivate;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
@@ -117,130 +118,130 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     public $businessOrPrivateEmailAddress;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      */
     public $primaryOrBusinessEmailAddress;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      */
     public $primaryOrPrivateEmailAddress;
-                
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      */
     public $primaryEmailAddress;
-        
+
     /**
-     * @cx_field true
+     * @cx_field           true
      * @var Carerix_Api_Rest_Entity_CRDataNode
-     * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode") 
-     * @access private
+     * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
+     * @access             private
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toStatusNode
-     * @nodeType Kandidaat-status
+     * @nodeType           Kandidaat-status
      */
     public $toStatusNode;
-    
+
     /**
      * @cx_field true
      * Added for BC reasons.
      * @var Carerix_Api_Rest_Entity_Company
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRCompany")
-     * @access private
+     * @access   private
      */
     public $toCompany;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
+     * @width       200
      */
     public $emailAddressBusiness;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
+     * @width       200
      */
     public $emailAddress;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
+     * @width       200
      */
     public $homeEmailAddress = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toMailingCountryNode
      * @default
-     * @nodeType Land
+     * @nodeType           Land
      */
     public $toMailingCountryNode = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toMailingProvinceNode
      * @default
-     * @nodeType Regio
+     * @nodeType           Regio
      */
     public $toMailingProvinceNode = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var integer
      * @value_class NSNumber
      * @allows_null 0
      */
     public $syncmail;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
+     * @width       200
      */
     public $mailboxType;
-        
+
     /**
      * Gets userRoleID
      *
@@ -250,11 +251,12 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     {
         return $this->userRoleID;
     }
-    
+
     /**
      * Sets userRoleID
      *
      * @param integer $userRoleID userRoleID
+     *
      * @return self
      */
     public function setUserRoleID($userRoleID)
@@ -262,7 +264,7 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
         $this->userRoleID = $userRoleID;
         return $this;
     }
-        
+
     /**
      * Get owner.
      *
@@ -272,24 +274,25 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     {
         return $this->owner;
     }
-    
+
     /**
      * Set owner.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRUser $value
+     *
      * @return Carerix_Api_Rest_Entity_CRUser
      */
     public function setOwner($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRUser($value);
         }
         $this->owner = $value;
         return $this;
     }
-        
+
     /**
      * Gets lessFormalNameString
      *
@@ -299,11 +302,12 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     {
         return $this->lessFormalNameString;
     }
-    
+
     /**
      * Sets lessFormalNameString
      *
      * @param string $lessFormalNameString lessFormalNameString
+     *
      * @return self
      */
     public function setLessFormalNameString($lessFormalNameString)
@@ -311,70 +315,73 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
         $this->lessFormalNameString = $lessFormalNameString;
         return $this;
     }
-    
+
     /**
      * Gets emailAddressPrivate
      *
      * @return string
      */
-    public function getEmailAddressPrivate() 
+    public function getEmailAddressPrivate()
     {
         return $this->emailAddressPrivate;
     }
-    
+
     /**
      * Sets emailAddressPrivate
      *
      * @param string $emailAddressPrivate emailAddressPrivate
+     *
      * @return self
      */
-    public function setEmailAddressPrivate($emailAddressPrivate) 
+    public function setEmailAddressPrivate($emailAddressPrivate)
     {
         $this->emailAddressPrivate = $emailAddressPrivate;
         return $this;
     }
-    
+
     /**
      * Gets emailAddress
      *
      * @return string
      */
-    public function getEmailAddress() 
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
-    
+
     /**
      * Sets emailAddress
      *
      * @param string $emailAddress emailAddress
+     *
      * @return self
      */
-    public function setEmailAddress($emailAddress) 
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
         return $this;
     }
-    
+
     /**
      * Gets toCompany
      *
      * @return Carerix_Api_Rest_Entity_CRCompany
      */
-    public function getToCompany() 
+    public function getToCompany()
     {
         return $this->toCompany;
     }
-    
+
     /**
      * Sets toCompany
      *
      * @param array|Carerix_Api_Rest_Entity_CRCompany $toCompany toCompany
+     *
      * @return self
      */
-    public function setToCompany($toCompany) 
+    public function setToCompany($toCompany)
     {
-        if(is_array($toCompany)) {
+        if (is_array($toCompany)) {
             $toCompany = new Carerix_Api_Rest_Entity_CRCompany($toCompany);
         }
         $this->toCompany = $toCompany;
@@ -386,45 +393,47 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
      *
      * @return Carerix_Api_Rest_Entity_CRDataNode
      */
-    public function getToStatusNode() 
+    public function getToStatusNode()
     {
         return $this->toStatusNode;
     }
-    
+
     /**
      * Sets toStatusNode
      *
      * @param Carerix_Api_Rest_Entity_CRDataNode $toStatusNode toStatusNode
+     *
      * @return self
      */
-    public function setToStatusNode($toStatusNode) 
+    public function setToStatusNode($toStatusNode)
     {
         $this->toStatusNode = $toStatusNode;
         return $this;
-    }    
-        
+    }
+
     /**
      * Gets emailAddressBusiness
      *
      * @return string
      */
-    public function getEmailAddressBusiness() 
+    public function getEmailAddressBusiness()
     {
         return $this->emailAddressBusiness;
     }
-    
+
     /**
      * Sets emailAddressBusiness
      *
      * @param string $emailAddressBusiness emailAddressBusiness
+     *
      * @return self
      */
-    public function setEmailAddressBusiness($emailAddressBusiness) 
+    public function setEmailAddressBusiness($emailAddressBusiness)
     {
         $this->emailAddressBusiness = $emailAddressBusiness;
         return $this;
     }
-    
+
     /**
      * Gets mailboxType
      *
@@ -434,27 +443,29 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     {
         return $this->mailboxType;
     }
-    
+
     /**
      * Sets mailboxType
      *
      * @param string mailboxType mailboxType
+     *
      * @return self
      */
     public function setMailboxType($mailboxType)
     {
         $this->mailboxType = $mailboxType;
         return $this;
-    }    
-    
-   /**
-    * Set homeEmailAddress.
-    *
-    * Provides a fluent interface.
-    *
-    * @param string $value [optional]
-    * @return Carerix_Api_Rest_Entity_Abstract_CRContact
-    */
+    }
+
+    /**
+     * Set homeEmailAddress.
+     *
+     * Provides a fluent interface.
+     *
+     * @param string $value [optional]
+     *
+     * @return Carerix_Api_Rest_Entity_Abstract_CRContact
+     */
     public function setHomeEmailAddress($value)
     {
         $this->homeEmailAddress = $value;
@@ -470,20 +481,21 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     {
         return $this->homeEmailAddress;
     }
-    
+
     /**
      * Set toMailingCountryNode.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CRCompany
      */
     public function setToMailingCountryNode($value)
     {
-        if(is_array($value)) {
-            $value = new Carerix_Api_Rest_Entity_CRDataNode($value); 
-        }                 
+        if (is_array($value)) {
+            $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
+        }
         $this->toMailingCountryNode = $value;
         return $this;
     }
@@ -497,20 +509,21 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     {
         return $this->toMailingCountryNode;
     }
-    
+
     /**
      * Set toMailingProvinceNode.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CRAgency
      */
     public function setToMailingProvinceNode($value)
     {
-        if(is_array($value)) {
-            $value = new Carerix_Api_Rest_Entity_CRDataNode($value); 
-        }                 
+        if (is_array($value)) {
+            $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
+        }
         $this->toMailingProvinceNode = $value;
         return $this;
     }
@@ -524,89 +537,92 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     {
         return $this->toMailingProvinceNode;
     }
-    
+
     /**
      * Get a list of meetings for a given user.
-     * 
-     * @param array $parameters [optional] e.g. array('startDate' => '-30 days', 'endDate' => 'now')
-     * @param integer $hydrate [optional] hydration method 
+     *
+     * @param array   $parameters [optional] e.g. array('startDate' => '-30 days', 'endDate' => 'now')
+     * @param integer $hydrate    [optional] hydration method
+     *
      * @return Carerix_Api_Rest_Collection
      */
     public function meeting($parameters = null, $hydrate = null)
     {
         $args = func_get_args();
-        switch(count($args)) {
+        switch (count($args)) {
             case 1:
-                if(!is_array($args[0])) {
-                    $parameters = array();
-                    $hydrate = $args[0];                    
+                if (!is_array($args[0])) {
+                    $parameters = [];
+                    $hydrate = $args[0];
                 }
-            break;
+                break;
         }
-                
-        if(!$this->getId()) {
+
+        if (!$this->getId()) {
             throw new Carerix_Api_Rest_Exception('Please load the object from the REST API first or set id.');
         }
-        $parameters = array_merge((array) $parameters, array('userID' => $this->getId()));
-         $get_called_class = get_class($this);
+        $parameters = array_merge((array)$parameters, ['userID' => $this->getId()]);
+        $get_called_class = get_class($this);
         $action = 'meeting';
         return self::$_manager->execute(
-            'Carerix_Api_Rest_Entity_CRToDo', 
+            'Carerix_Api_Rest_Entity_CRToDo',
             $this->generateUrl(get_defined_vars(), $get_called_class),
             Carerix_Api_Rest_Client::GET,
             null,
             null,
             $hydrate
-        );        
+        );
     }
-    
+
     /**
      * Get a list of meetings for a given user.
-     * 
+     *
      * This is an improved version of meetings.xml.
-     * 
-     * @param array $parameters [optional] e.g. array('startDate' => '-30 days', 'endDate' => 'now')
-     * @param integer $hydrate [optional] hydration method 
+     *
+     * @param array   $parameters [optional] e.g. array('startDate' => '-30 days', 'endDate' => 'now')
+     * @param integer $hydrate    [optional] hydration method
+     *
      * @return Carerix_Api_Rest_Collection
      */
     public function meeting2($parameters = null, $hydrate = null)
     {
         $args = func_get_args();
-        switch(count($args)) {
+        switch (count($args)) {
             case 1:
-                if(!is_array($args[0])) {
-                    $parameters = array();
-                    $hydrate = $args[0];                    
+                if (!is_array($args[0])) {
+                    $parameters = [];
+                    $hydrate = $args[0];
                 }
-            break;
+                break;
         }
-                
-        if(!$this->getId()) {
+
+        if (!$this->getId()) {
             throw new Carerix_Api_Rest_Exception('Please load the object from the REST API first or set id.');
         }
-        $parameters = array_merge((array) $parameters, array('user' => $this->getId()));
-         $get_called_class = get_class($this);
+        $parameters = array_merge((array)$parameters, ['user' => $this->getId()]);
+        $get_called_class = get_class($this);
         $action = 'meeting2';
         return self::$_manager->execute(
-            'Carerix_Api_Rest_Entity_CRToDo', 
+            'Carerix_Api_Rest_Entity_CRToDo',
             $this->generateUrl(get_defined_vars(), $get_called_class),
             Carerix_Api_Rest_Client::GET,
             null,
             null,
             $hydrate
-        );        
+        );
     }
-    
+
     /**
-     * Get user object by auth. 
-     * 
-     * @param array $parameters 
-     * @param integer $hydrate [optional] hydration method 
+     * Get user object by auth.
+     *
+     * @param array   $parameters
+     * @param integer $hydrate [optional] hydration method
+     *
      * @return Carerix_Api_Rest_Entity_CRUser
-     * 
-     * @see http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#GET_user.2Fget-by-auth
+     *
+     * @see    http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#GET_user.2Fget-by-auth
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
-     */        
+     */
     public static function getByAuth(array $parameters, $hydrate = null)
     {
         $action = 'get-by-auth';
@@ -617,22 +633,23 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
             Carerix_Api_Rest_Client::GET,
             null,
             null,
-            $hydrate            
+            $hydrate
         );
-    }     
+    }
 
     /**
-     * Get user object by username and hash. 
-     * 
-     * @param array $parameters
-     * @param integer $hydrate [optional] hydration method  
+     * Get user object by username and hash.
+     *
+     * @param array   $parameters
+     * @param integer $hydrate [optional] hydration method
+     *
      * @return Carerix_Api_Rest_Entity_CRUser
-     * 
-     * @see http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#GET_user.2Fget-by-username-and-hash
+     *
+     * @see    http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#GET_user.2Fget-by-username-and-hash
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
-     */        
+     */
     public static function getByUsernameAndHash(array $parameters, $hydrate = null)
-    {    
+    {
         $action = 'get-by-username-and-hash';
         $get_called_class = get_called_class();
         return self::$_manager->execute(
@@ -644,15 +661,16 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
             $hydrate
         );
     }
-    
+
     /**
      * Get user object by username and encrypted password.
      *
-     * @param array $parameters
+     * @param array   $parameters
      * @param integer $hydrate [optional] hydration method
+     *
      * @return Carerix_Api_Rest_Entity_CRUser
      *
-     * @see http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods
+     * @see    http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      */
     public static function loginWithEncryptedPassword(array $parameters, $hydrate = null)
@@ -666,7 +684,7 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
             null,
             null,
             $hydrate
-            );
+        );
     }
 
     /**
@@ -675,16 +693,18 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
      * scenario when multiple user tokens might be returned for same user if she
      * has duplicate Notes in the system.
      *
-     * @param string $action
-     * @param array $parameters
+     * @param string  $action
+     * @param array   $parameters
      * @param integer $hydrate [optional] hydration method
+     *
      * @return mixed xml|array
      *
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      */
-    private static function doGetTokenStatic($action, array $parameters, $hydrate = self::HYDRATE_ARRAY) {
-        if(!in_array($hydrate, array(self::HYDRATE_NONE, self::HYDRATE_ARRAY))) {
-            throw new Carerix_Api_Rest_Exception('Unsupported hydration mode for '.__METHOD__);
+    private static function doGetTokenStatic($action, array $parameters, $hydrate = self::HYDRATE_ARRAY)
+    {
+        if (!in_array($hydrate, [self::HYDRATE_NONE, self::HYDRATE_ARRAY])) {
+            throw new Carerix_Api_Rest_Exception('Unsupported hydration mode for ' . __METHOD__);
         }
         $get_called_class = get_called_class();
         $result = self::$_manager->execute(
@@ -697,11 +717,11 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
         );
 
         // [AY] special logic to deal with multiple user tokens if duplicate notes exist in user's account
-        if($hydrate == self::HYDRATE_ARRAY) {
-            if(isset($result['debug'])) {
+        if ($hydrate == self::HYDRATE_ARRAY) {
+            if (isset($result['debug'])) {
                 unset($result['debug']);
             }
-            if(isset($result['token']) && is_array($result['token'])) {
+            if (isset($result['token']) && is_array($result['token'])) {
                 $result['token'] = array_shift($result['token']);
             }
         }
@@ -728,52 +748,69 @@ class Carerix_Api_Rest_Entity_CRUser extends Carerix_Api_Rest_Entity_Abstract_CR
     /**
      * Get user token and id by systemName and type.
      *
-     * @param array $parameters
+     * @param array   $parameters
      * @param integer $hydrate [optional] hydration method
+     *
      * @return mixed xml|array
      *
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      */
     public function getToken(array $parameters, $hydrate = self::HYDRATE_ARRAY)
     {
-        if(!$this->getUserName() || !$this->getPassword()) {
-            throw new Carerix_Api_Rest_Exception('Please load the object from the REST API first or set userName and password before calling this method.');
+        if (!$this->getUserName() || !$this->getPassword()) {
+            throw new Carerix_Api_Rest_Exception(
+                'Please load the object from the REST API first or set userName and password before calling this method.'
+            );
         }
-        $parameters = array_merge($parameters, array('userName' => $this->getUserName(), 'password' => $this->getPassword()));
+        $parameters = array_merge(
+            $parameters,
+            ['userName' => $this->getUserName(), 'password' => $this->getPassword()]
+        );
         return Carerix_Api_Rest_Entity_CRUser::getTokenStatic($parameters, $hydrate);
     }
 
     /**
      * Get user token and id by systemName and type using encryptedPassword
      *
-     * @param array $parameters
+     * @param array   $parameters
      * @param integer $hydrate [optional] hydration method
+     *
      * @return mixed xml|array
      *
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      */
     public function getTokenUsingEncryptedPassword(array $parameters, $hydrate = self::HYDRATE_ARRAY)
     {
-        if(!$this->getUserName() || !$this->getEncryptedPassword()) {
-            throw new Carerix_Api_Rest_Exception('Please load the object from the REST API first or set userName and encryptedPassword before calling this method.');
+        if (!$this->getUserName() || !$this->getEncryptedPassword()) {
+            throw new Carerix_Api_Rest_Exception(
+                'Please load the object from the REST API first or set userName and encryptedPassword before calling this method.'
+            );
         }
-        $parameters = array_merge($parameters, array('userName' => $this->getUserName(), 'encryptedPassword' => $this->getEncryptedPassword()));
+        $parameters = array_merge(
+            $parameters,
+            [
+                'userName' => $this->getUserName(),
+                'encryptedPassword' => $this->getEncryptedPassword(),
+            ]
+        );
         return Carerix_Api_Rest_Entity_CRUser::getTokenStaticUsingEncryptedPassword($parameters, $hydrate);
     }
 
     /**
      * (non-PHPdoc)
-     * @see Carerix_Api_Rest_Entity::subscribe()
+     *
      * @return Carerix_Api_Rest_Entity_CRUser
+     * @see Carerix_Api_Rest_Entity::subscribe()
      */
     /**
      * (non-PHPdoc)
-     * @see Carerix_Api_Rest_Entity::subscribe()
+     *
      * @return Carerix_Api_Rest_Entity_Employee
+     * @see Carerix_Api_Rest_Entity::subscribe()
      */
     public function subscribe()
     {
         $args = func_get_args();
-        return call_user_func_array(array('parent', 'subscribe'), $args);    
+        return call_user_func_array(['parent', 'subscribe'], $args);
     }
 }

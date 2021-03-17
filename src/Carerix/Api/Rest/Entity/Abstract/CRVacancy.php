@@ -4,30 +4,31 @@
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 
 /**
  * @ THIS FILE WAS GENERATED AUTOMATICALLY USING REST API ENTITY DESCRIBE SERVICE.
  * DO NOT MODIFY IT. YOUR CHANGES WILL BE LOST. INSTEAD MODIFY CONCRETE
  * IMPLEMENTATION OF THIS CLASS IF NECESSARY.
- * @category Carerix
+ *
+ * @category  Carerix
  * @licence http://www.opensource.org/licenses/lgpl-license.php LGPL
- * @link http://development.wiki.carerix.com/index.php/CxRest
+ * @link      http://development.wiki.carerix.com/index.php/CxRest
  * @copyright Copyright 2011-2018 Carerix (http://www.carerix.com). All rights
  * reserved.
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
- * @version Mon, 19 Nov 2018 11:55:57 +0200
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @version   Mon, 19 Nov 2018 11:55:57 +0200
  * @method Carerix_Api_Rest_Entity_Abstract_CRVacancy setModificationDate()
  * setModificationDate(string $value) Set modificationDate attribute. Provides a
  * fluent interface.
@@ -812,8 +813,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     const ENTITY = 'CRVacancy';
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -821,8 +822,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $modificationDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 0
@@ -830,61 +831,61 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $creationDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $maxDistance = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $vacancyID = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 30
+     * @width       30
      */
     public $workPostalCode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $deleted = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
+     * @width       200
      */
     public $jobTitle = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -892,8 +893,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $startDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -901,41 +902,41 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $endDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $numberOfVacancies = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $matchCountMO = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $activePublicationsCount = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -943,8 +944,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $minSalary = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -952,18 +953,18 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $maxSalary = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 45
+     * @width       45
      */
     public $vacancyNo = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -971,19 +972,19 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $hoursPerWeek = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
-     * @isUnique 1
+     * @width       255
+     * @isUnique    1
      */
     public $importID = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -991,30 +992,30 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $statusChangedDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $isVirtual = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $copyID = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1022,30 +1023,30 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $fte = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $isHidden = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $isOpenApplication = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1053,8 +1054,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $rotationOff = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1062,8 +1063,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $rotationOn = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1071,8 +1072,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $friWorkMinutes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1080,8 +1081,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $monWorkMinutes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1089,8 +1090,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $satWorkMinutes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1098,8 +1099,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $sunWorkMinutes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1107,8 +1108,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $thuWorkMinutes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1116,8 +1117,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $tueWorkMinutes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1125,8 +1126,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $wedWorkMinutes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1134,8 +1135,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $successRatePercentage = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1143,8 +1144,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $estimatedAmount = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1152,8 +1153,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $realizedAmount = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1161,8 +1162,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $estimatedDays = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1170,200 +1171,200 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $realizedDays = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $arboRequirements = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $invoiceAttention = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $invoiceCity = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $invoiceNumber = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 30
+     * @width       30
      */
     public $invoicePostalCode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $invoiceStreet = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $vacancyInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $workCity = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $additionalInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $applicationContactInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $companyInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $contactInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 120
+     * @width       120
      */
     public $contractPeriod = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $hasBonus = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $hasCompanyCar = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $invoiceFullAddress = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $invoiceNumberSuffix = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $notes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $offerInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -1371,81 +1372,81 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $reactionEndDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $requirements = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 80
+     * @width       80
      */
     public $salaryScale = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $trainingInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $sourceInfo = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $coordX = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $coordY = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $isAnonymous = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1453,8 +1454,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $feePercentage = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1462,101 +1463,101 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $invoiceDiscountPercentage = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 100
+     * @width       100
      */
     public $workLocation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $titleInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $introInformation = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 128
+     * @width       128
      */
     public $invoiceSubject = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 128
+     * @width       128
      */
     public $customerReference = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $numberOfInvoicePrints = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
+     * @width       200
      */
     public $invoiceEmailAddress = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $isTemplate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 0
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      0
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $isConfidential = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var Carerix_Api_Rest_DataType_NSArray|array
      * @value_class NSArray
      * @allows_null 1
@@ -1564,18 +1565,18 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $userBonuses = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $invoiceCompanyName = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var float
      * @value_class NSDecimalNumber
      * @allows_null 1
@@ -1583,19 +1584,19 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $salesFactor = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $createCollectiveInvoices = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var Carerix_Api_Rest_DataType_NSDictionary|array
      * @value_class NSDictionary
      * @allows_null 1
@@ -1603,8 +1604,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $additionalInfo = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var Carerix_Api_Rest_DataType_NSDictionary|array
      * @value_class NSDictionary
      * @allows_null 1
@@ -1612,19 +1613,19 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $additionalInfoPartial = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type i
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       i
      * @value_type_human long integer (32 bits)
      */
     public $commitmentLevelNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -1632,8 +1633,8 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $signDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -1641,78 +1642,78 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $deadline = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $languageNotes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $skillNotes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $externalIdentifier = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $workStreet = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $workNumber = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $workNumberSuffix = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $workFullAddress = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var Carerix_Api_Rest_DataType_NSArray|array
      * @value_class NSArray
      * @allows_null 1
@@ -1720,947 +1721,947 @@ abstract class Carerix_Api_Rest_Entity_Abstract_CRVacancy extends Carerix_Api_Re
     public $sharingAgenciesIDs = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRMatch")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRMatch
-     * @to_many 1
+     * @to_many            1
      * @name matches
      */
     public $matches = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name toUser
      */
     public $toUser = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name createdBy
      */
     public $createdBy = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name modifiedBy
      */
     public $modifiedBy = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name owner
      */
     public $owner = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRAttachment")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRAttachment
-     * @to_many 1
+     * @to_many            1
      * @name attachments
      */
     public $attachments = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRPublication")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRPublication
-     * @to_many 1
+     * @to_many            1
      * @name publications
      */
     public $publications = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toStatusNode
-     * @default 1
-     * @nodeType Vacature-status
+     * @default            1
+     * @nodeType           Vacature-status
      */
     public $toStatusNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toSalaryPeriodNode
-     * @default 1
-     * @nodeType Salarisperiode
+     * @default            1
+     * @nodeType           Salarisperiode
      */
     public $toSalaryPeriodNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toExperienceLevelNode
-     * @default 1
-     * @nodeType Ervaring
+     * @default            1
+     * @nodeType           Ervaring
      */
     public $toExperienceLevelNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProvince1Node
      */
     public $toProvince1Node = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProductNode
-     * @default 1
-     * @nodeType Productgroep
+     * @default            1
+     * @nodeType           Productgroep
      */
     public $toProductNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProductTypeNode
-     * @default 1
-     * @nodeType Product
+     * @default            1
+     * @nodeType           Product
      */
     public $toProductTypeNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRVacancyEducation")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRVacancyEducation
-     * @to_many 1
+     * @to_many            1
      * @name educations
      */
     public $educations = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name toVacancyHolder
      */
     public $toVacancyHolder = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toFunctionLevel1
-     * @default 1
-     * @nodeType Functie0
+     * @default            1
+     * @nodeType           Functie0
      */
     public $toFunctionLevel1 = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toFunctionLevel2
-     * @default 1
-     * @nodeType Functie1
+     * @default            1
+     * @nodeType           Functie1
      */
     public $toFunctionLevel2 = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toContractTypeNode
-     * @default 1
-     * @nodeType Dienstverband
+     * @default            1
+     * @nodeType           Dienstverband
      */
     public $toContractTypeNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toDriverLicenceNode
-     * @default 1
-     * @nodeType Rijbewijs
+     * @default            1
+     * @nodeType           Rijbewijs
      */
     public $toDriverLicenceNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name toSignAuthority
      */
     public $toSignAuthority = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRVacancyTraining")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRVacancyTraining
-     * @to_many 1
+     * @to_many            1
      * @name trainings
      */
     public $trainings = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toFunctionTypeNode
      */
     public $toFunctionTypeNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toCountry1Node
-     * @default 1
-     * @nodeType Land
+     * @default            1
+     * @nodeType           Land
      */
     public $toCountry1Node = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toSalaryCurrencyNode
-     * @default 1
-     * @nodeType Valuta
+     * @default            1
+     * @nodeType           Valuta
      */
     public $toSalaryCurrencyNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toWorkUnitNode
-     * @default 1
-     * @nodeType Werktijden-eenheid
+     * @default            1
+     * @nodeType           Werktijden-eenheid
      */
     public $toWorkUnitNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toRotationOnUnitNode
-     * @default 1
-     * @nodeType Werkschema-eenheid
+     * @default            1
+     * @nodeType           Werkschema-eenheid
      */
     public $toRotationOnUnitNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toRotationOffUnitNode
-     * @default 1
-     * @nodeType Werkschema-eenheid
+     * @default            1
+     * @nodeType           Werkschema-eenheid
      */
     public $toRotationOffUnitNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRCompany
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRCompany")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRCompany
-     * @to_many 0
+     * @to_many            0
      * @name toCompetitor
      */
     public $toCompetitor = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toResultNode
-     * @default 1
-     * @nodeType Project-resultaat
+     * @default            1
+     * @nodeType           Project-resultaat
      */
     public $toResultNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toEstimatedAmountCurrencyNode
-     * @default 1
-     * @nodeType Valuta
+     * @default            1
+     * @nodeType           Valuta
      */
     public $toEstimatedAmountCurrencyNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toRealizedAmountCurrencyNode
-     * @default 1
-     * @nodeType Valuta
+     * @default            1
+     * @nodeType           Valuta
      */
     public $toRealizedAmountCurrencyNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toInvoiceCountryNode
-     * @default 1
-     * @nodeType Land
+     * @default            1
+     * @nodeType           Land
      */
     public $toInvoiceCountryNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toInvoiceProvinceNode
-     * @default 1
-     * @nodeType Regio
+     * @default            1
+     * @nodeType           Regio
      */
     public $toInvoiceProvinceNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toSalaryScaleCurrencyNode
-     * @default 1
-     * @nodeType Valuta
+     * @default            1
+     * @nodeType           Valuta
      */
     public $toSalaryScaleCurrencyNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toSalaryScaleNode
-     * @default 1
-     * @nodeType Salarisschaal
+     * @default            1
+     * @nodeType           Salarisschaal
      */
     public $toSalaryScaleNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toWorkCountryNode
-     * @default 1
-     * @nodeType Land
+     * @default            1
+     * @nodeType           Land
      */
     public $toWorkCountryNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toWorkLevelNode
-     * @default 1
-     * @nodeType Functieniveau
+     * @default            1
+     * @nodeType           Functieniveau
      */
     public $toWorkLevelNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRCompany
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRCompany")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRCompany
-     * @to_many 0
+     * @to_many            0
      * @name toCompany
      */
     public $toCompany = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toSourceNode
      * @default
-     * @nodeType Bron-Vacature
+     * @nodeType           Bron-Vacature
      */
     public $toSourceNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRJob")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRJob
-     * @to_many 1
+     * @to_many            1
      * @name jobs
      */
     public $jobs = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name toLevel3User
      */
     public $toLevel3User = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRCompany
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRCompany")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRCompany
-     * @to_many 0
+     * @to_many            0
      * @name toLevel3Company
      */
     public $toLevel3Company = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRCompany
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRCompany")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRCompany
-     * @to_many 0
+     * @to_many            0
      * @name toLevel2Company
      */
     public $toLevel2Company = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name toLevel2User
      */
     public $toLevel2User = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name broughtInBy
      */
     public $broughtInBy = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRAttributeChange")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRAttributeChange
-     * @to_many 1
+     * @to_many            1
      * @name attributeChanges
      */
     public $attributeChanges = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toTaxRateNode
-     * @default 1
-     * @nodeType BTW-tarief
+     * @default            1
+     * @nodeType           BTW-tarief
      */
     public $toTaxRateNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toPaymentPeriodNode
-     * @default 1
-     * @nodeType Betalingstermijn
+     * @default            1
+     * @nodeType           Betalingstermijn
      */
     public $toPaymentPeriodNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRInvoiceLine")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRInvoiceLine
-     * @to_many 1
+     * @to_many            1
      * @name invoiceLines
      */
     public $invoiceLines = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toCountry2Node
      * @default
-     * @nodeType Land
+     * @nodeType           Land
      */
     public $toCountry2Node = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toCountry3Node
      * @default
-     * @nodeType Land
+     * @nodeType           Land
      */
     public $toCountry3Node = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProvince2Node
      */
     public $toProvince2Node = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProvince3Node
      */
     public $toProvince3Node = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name toInvoiceUser
      */
     public $toInvoiceUser = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRCompany
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRCompany")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRCompany
-     * @to_many 0
+     * @to_many            0
      * @name toInvoiceCompany
      */
     public $toInvoiceCompany = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toVacancyTypeNode
-     * @default 1
-     * @nodeType Vacature-type
+     * @default            1
+     * @nodeType           Vacature-type
      */
     public $toVacancyTypeNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toInvoiceHandlingNode
-     * @default 1
-     * @nodeType Factuurafhandeling
+     * @default            1
+     * @nodeType           Factuurafhandeling
      */
     public $toInvoiceHandlingNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toInvoiceLineLabelNode
-     * @default 1
-     * @nodeType Factuurregel-label
+     * @default            1
+     * @nodeType           Factuurregel-label
      */
     public $toInvoiceLineLabelNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toPaymentPeriodStartDateNode
-     * @default 1
-     * @nodeType Betalingstermijn-startdatum
+     * @default            1
+     * @nodeType           Betalingstermijn-startdatum
      */
     public $toPaymentPeriodStartDateNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toCreditMethodNode
-     * @default 1
-     * @nodeType Crediteringsmethode
+     * @default            1
+     * @nodeType           Crediteringsmethode
      */
     public $toCreditMethodNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 1
+     * @to_many            1
      * @name groupNodes
      */
     public $groupNodes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toCategoryNode
-     * @default 1
-     * @nodeType Vacature-categorie
+     * @default            1
+     * @nodeType           Vacature-categorie
      */
     public $toCategoryNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRVacancyUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRVacancyUser
-     * @to_many 1
+     * @to_many            1
      * @name vacancyUsers
      */
     public $vacancyUsers = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProjectNode
      */
     public $toProjectNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUserRole
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUserRole")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUserRole
-     * @to_many 0
+     * @to_many            0
      * @name toConfidentialUserRole
      */
     public $toConfidentialUserRole = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRAgency
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRAgency")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRAgency
-     * @to_many 0
+     * @to_many            0
      * @name agency
      */
     public $agency = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toCommitmentLevelNode
-     * @default 1
-     * @nodeType Commitment-level
+     * @default            1
+     * @nodeType           Commitment-level
      */
     public $toCommitmentLevelNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toBrancheLevel1
      */
     public $toBrancheLevel1 = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toBrancheLevel2
      */
     public $toBrancheLevel2 = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRLead
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRLead")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRLead
-     * @to_many 0
+     * @to_many            0
      * @name toLead
      */
     public $toLead = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CROpportunity
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CROpportunity")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CROpportunity
-     * @to_many 0
+     * @to_many            0
      * @name toOpportunity
      */
     public $toOpportunity = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRVacancySkill")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRVacancySkill
-     * @to_many 1
+     * @to_many            1
      * @name skills
      */
     public $skills = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRVacancyLanguage")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRVacancyLanguage
-     * @to_many 1
+     * @to_many            1
      * @name languages
      */
     public $languages = null;

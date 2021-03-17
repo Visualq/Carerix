@@ -1,21 +1,22 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 /*
  *  $Id$
  *
@@ -45,32 +46,32 @@
  * @version     $Revision$
  * @author      Jonathan H. Wage <jonwage@gmail.com>
  */
-
 class Carerix_Api_Rest_Request
 {
     private $_url;
     private $_method = Carerix_Api_Rest_Client::GET;
-    private $_parameters = array();
+    private $_parameters = [];
     private $_username;
     private $_password;
     private $_responseType = 'xml';
     private $_responseTransformerImpl;
-    
+
     /**
      * @var string
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      */
     private $_proxy;
-    
+
     /**
      * @var string
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
-     */    
+     */
     private $_body;
 
     /**
-     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      * @param string $proxy
+     *
+     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      */
     public function setProxy($proxy)
     {
@@ -79,18 +80,19 @@ class Carerix_Api_Rest_Request
     }
 
     /**
-     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      * @return string
-     */    
+     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+     */
     public function getProxy()
     {
         return $this->_proxy;
     }
 
     /**
-     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      * @param string $body
-     */    
+     *
+     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+     */
     public function setBody($body)
     {
         $this->_body = $body;
@@ -98,14 +100,14 @@ class Carerix_Api_Rest_Request
     }
 
     /**
-     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
      * @return string
-     */    
+     * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+     */
     public function getBody()
     {
         return $this->_body;
     }
-    
+
     public function setUrl($url)
     {
         $this->_url = $url;
@@ -174,19 +176,21 @@ class Carerix_Api_Rest_Request
 
     /**
      * Set response transformer implementation.
-     * 
+     *
      * @param Carerix_Api_Rest_ResponseTransformer_AbstractResponseTransformer $responseTransformerImpl
+     *
      * @return void
      */
-    public function setResponseTransformerImpl(Carerix_Api_Rest_ResponseTransformer_AbstractResponseTransformer $responseTransformerImpl)
-    {
+    public function setResponseTransformerImpl(
+        Carerix_Api_Rest_ResponseTransformer_AbstractResponseTransformer $responseTransformerImpl
+    ) {
         $this->_responseTransformerImpl = $responseTransformerImpl;
         return $this;
     }
 
     /**
      * Get response transformer implementation.
-     * 
+     *
      * @return Carerix_Api_Rest_ResponseTransformer_AbstractResponseTransformer
      */
     public function getResponseTransformerImpl()

@@ -1,58 +1,59 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 /**
- * @category Carerix
+ * @category  Carerix
  * @licence http://www.opensource.org/licenses/lgpl-license.php LGPL
- * @link http://www.carerix.com
+ * @link      http://www.carerix.com
  * @copyright Copyright 2011 Carerix (http://www.carerix.com). All rights reserved.
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
- * @version Fri, 23 Sep 2011 10:21:11 +0300
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @version   Fri, 23 Sep 2011 10:21:11 +0300
  */
 class Carerix_Api_Rest_Entity_CRDraft extends Carerix_Api_Rest_Entity_Abstract_CRDraft
 {
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toDelayUnitNode
-     * @nodeType Uitstel-eenheid
+     * @nodeType           Uitstel-eenheid
      */
     public $toDelayUnitNode = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      * @width
      */
     public $notes = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var integer
      * @value_class NSNumber
      * @allows_null 1
@@ -60,24 +61,25 @@ class Carerix_Api_Rest_Entity_CRDraft extends Carerix_Api_Rest_Entity_Abstract_C
      * @value_type_human
      */
     public $delay = null;
-    
+
     /**
      * Set toDelayUnitNode.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CRDraft
      */
     public function setToDelayUnitNode($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toDelayUnitNode = $value;
         return $this;
     }
-    
+
     /**
      * Get toDelayUnitNode.
      *
@@ -87,13 +89,14 @@ class Carerix_Api_Rest_Entity_CRDraft extends Carerix_Api_Rest_Entity_Abstract_C
     {
         return $this->toDelayUnitNode;
     }
-    
+
     /**
      * Set notes.
      *
      * Provides a fluent interface.
      *
      * @param string $value [optional]
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CRMeeting
      */
     public function setNotes($value)
@@ -101,7 +104,7 @@ class Carerix_Api_Rest_Entity_CRDraft extends Carerix_Api_Rest_Entity_Abstract_C
         $this->notes = $value;
         return $this;
     }
-    
+
     /**
      * Get notes.
      *
@@ -118,6 +121,7 @@ class Carerix_Api_Rest_Entity_CRDraft extends Carerix_Api_Rest_Entity_Abstract_C
      * Provides a fluent interface.
      *
      * @param integer $value [optional]
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CREmail
      */
     public function setDelay($value)
@@ -125,7 +129,7 @@ class Carerix_Api_Rest_Entity_CRDraft extends Carerix_Api_Rest_Entity_Abstract_C
         $this->delay = $value;
         return $this;
     }
-    
+
     /**
      * Get delay.
      *

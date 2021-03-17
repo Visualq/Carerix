@@ -1,29 +1,29 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
-/**
- * @category Carerix
- * @licence http://www.opensource.org/licenses/lgpl-license.php LGPL
- * @link http://www.carerix.com
- * @copyright Copyright 2011 Carerix (http://www.carerix.com). All rights reserved.
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
- * @version Fri, 23 Sep 2011 10:20:53 +0300
 
+/**
+ * @category  Carerix
+ * @licence http://www.opensource.org/licenses/lgpl-license.php LGPL
+ * @link      http://www.carerix.com
+ * @copyright Copyright 2011 Carerix (http://www.carerix.com). All rights reserved.
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @version   Fri, 23 Sep 2011 10:20:53 +0300
  * @method Carerix_Api_Rest_Entity_CREmployee setToAdminVisitProvinceNode()
  * setToAdminVisitProvinceNode(array|Carerix_Api_Rest_Entity_CRDataNode $value) Set
  * toAdminVisitProvinceNode relationship. Provides a fluent interface.
@@ -58,7 +58,6 @@
  * setAdminVisitCity(string $value) Set adminVisitCity attribute. Provides a fluent
  * interface.
  * @method string getAdminVisitCity getAdminVisitCity() Get adminVisitNumber attribute.
-
  * @method Carerix_Api_Rest_Entity_CREmployee setToAdminHomeProvinceNode()
  * setToAdminHomeProvinceNode(array|Carerix_Api_Rest_Entity_CRDataNode $value) Set
  * toAdminVisitProvinceNode relationship. Provides a fluent interface.
@@ -93,7 +92,6 @@
  * setAdminHomeCity(string $value) Set adminHomeCity attribute. Provides a fluent
  * interface.
  * @method string getAdminHomeCity getAdminHomeCity() Get adminHomeNumber attribute.
-
  * @method Carerix_Api_Rest_Entity_CREmployee setToAdminAlternativeProvinceNode()
  * setToAdminAlternativeProvinceNode(array|Carerix_Api_Rest_Entity_CRDataNode $value) Set
  * toAdminVisitProvinceNode relationship. Provides a fluent interface.
@@ -111,7 +109,8 @@
  * @method Carerix_Api_Rest_Entity_CREmployee setAdminAlternativeNumberSuffix()
  * setAdminAlternativeNumberSuffix(string $value) Set adminAlternativeNumberSuffix attribute. Provides a fluent
  * interface.
- * @method string getAdminAlternativeNumberSuffix getAdminAlternativeNumberSuffix() Get adminAlternativeNumber attribute.
+ * @method string getAdminAlternativeNumberSuffix getAdminAlternativeNumberSuffix() Get adminAlternativeNumber
+ *         attribute.
  * @method Carerix_Api_Rest_Entity_CREmployee setAdminAlternativePostalCode()
  * setAdminAlternativePostalCode(string $value) Set adminAlternativePostalCode attribute. Provides a fluent
  * interface.
@@ -162,33 +161,32 @@
  * if not defined private email attribute
  * @method string getPrimaryEmailAddress getPrimaryAddress() - Gets primary email attribute
  */
-
 class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstract_CREmployee
 {
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field         true
+     * @access           private
      * @var integer
-     * @value_class NSNumber
-     * @allows_null 1
-     * @value_type s
+     * @value_class      NSNumber
+     * @allows_null      1
+     * @value_type       s
      * @value_type_human short integer (16 bits)
      */
     public $hasPhoto = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 1000000
+     * @width       1000000
      */
     public $photo = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var Carerix_Api_Rest_DataType_NSArray|array
      * @value_class NSArray
      * @allows_null 1
@@ -196,387 +194,388 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $photoList = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $fullAddress = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $city = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
-     * @alias toUser.emailAddresses[0].emailAddress
+     * @width       200
+     * @alias       toUser.emailAddresses[0].emailAddress
      */
     public $emailAddress = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 200
-     * @alias toUser.emailAddresses[0].emailAddress
+     * @width       200
+     * @alias       toUser.emailAddresses[0].emailAddress
      */
     public $emailAddressBusiness = null;
-/**
-     * @cx_field true
-     * @access private
+    /**
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      */
     public $primaryOrBusinessEmailAddress;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      */
     public $primaryOrPrivateEmailAddress;
-                
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
      */
-    public $primaryEmailAddress;        
-    
+    public $primaryEmailAddress;
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $phoneNumberBusiness = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $phoneNumber = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $mobileNumber;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $mobileNumberBusiness;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $firstName = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $lastName = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $lastNamePrefix = null;
-       
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toCountryNode
-     * @default 1
-     * @nodeType Land
+     * @default            1
+     * @nodeType           Land
      */
     public $toCountryNode = null;
-        
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
-     * @name toGenderNode 
-     * @nodeType 
+     * @to_many            0
+     * @name toGenderNode
+     * @nodeType
      */
     public $toGenderNode = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toStatusNode
      * @default
-     * @nodeType Kandidaat-status
+     * @nodeType           Kandidaat-status
      */
     public $toStatusNode = null;
-         
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toPovinceNode
      */
     public $toPovinceNode = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProductTypeNode1
      */
     public $toProductTypeNode1 = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProductTypeNode2
-     * 
+     *
      */
     public $toProductTypeNode2 = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toProductTypeNode3
      */
     public $toProductTypeNode3 = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toMinSalaryPeriodNode
      */
     public $toMinSalaryPeriodNode = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRUser
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRUser")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRUser
-     * @to_many 0
+     * @to_many            0
      * @name owner
      */
     public $owner = null;
-         
+
     /**
      * ATTENTION: Does not work for save operation!!!
-     * @cx_field true
-     * @access private
+     *
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 1
+     * @to_many            1
      * @name groups
-     * @nodeType Groep-Kandidaat
+     * @nodeType           Groep-Kandidaat
      */
     public $groups = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 1
+     * @to_many            1
      * @name groupNodes
-     * @nodeType Groep-Kandidaat
+     * @nodeType           Groep-Kandidaat
      */
     private $groupNodes = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Collection
      * @OneToMany (targetEntity="Carerix_Api_Rest_Entity_CREmailAddress")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CREmailAddress
-     * @to_many 1
+     * @to_many            1
      * @name emailAddresses
      */
     public $emailAddresses = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 32
+     * @width       32
      */
     public $suffix = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 32
+     * @width       32
      */
     public $title = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
      */
     public $birthDate = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $homeNumber = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $homeNumberSuffix = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 30
+     * @width       30
      */
     public $homePostalCode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $homeStreet = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toHomeCountryNode
      * @default
      * @nodeType
      */
     public $toHomeCountryNode = null;
-    
+
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toHomeProvinceNode
      * @default
      * @nodeType
@@ -584,13 +583,13 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $toHomeProvinceNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toAdminVisitProvinceNode
      * @default
      * @nodeType
@@ -598,13 +597,13 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $toAdminVisitProvinceNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toAdminVisitCountryNode
      * @default
      * @nodeType
@@ -612,73 +611,73 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $toAdminVisitCountryNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $adminVisitNumber = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $adminVisitNumberSuffix = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 30
+     * @width       30
      */
     public $adminVisitPostalCode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $adminVisitStreet = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $adminVisitAddress = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $adminVisitCity = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toAdminHomeProvinceNode
      * @default
      * @nodeType
@@ -686,13 +685,13 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $toAdminHomeProvinceNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toAdminHomeCountryNode
      * @default
      * @nodeType
@@ -700,73 +699,73 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $toAdminHomeCountryNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $adminHomeNumber = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $adminHomeNumberSuffix = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 30
+     * @width       30
      */
     public $adminHomePostalCode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $adminHomeStreet = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $adminHomeAddress = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $adminHomeCity = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toAdminAlternativeProvinceNode
      * @default
      * @nodeType
@@ -774,13 +773,13 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $toAdminAlternativeProvinceNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field           true
+     * @access             private
      * @var Carerix_Api_Rest_Entity_CRDataNode
      * @OneToOne (targetEntity="Carerix_Api_Rest_Entity_CRDataNode")
-     * @mandatory 0
+     * @mandatory          0
      * @destination_entity CRDataNode
-     * @to_many 0
+     * @to_many            0
      * @name toAdminAlternativeCountryNode
      * @default
      * @nodeType
@@ -788,68 +787,68 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $toAdminAlternativeCountryNode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $adminAlternativeNumber = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 10
+     * @width       10
      */
     public $adminAlternativeNumberSuffix = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 30
+     * @width       30
      */
     public $adminAlternativePostalCode = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $adminAlternativeStreet = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $adminAlternativeAddress = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $adminAlternativeCity = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSCalendarDate
      * @allows_null 1
@@ -857,72 +856,72 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     public $adminBirthDate = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 12
+     * @width       12
      */
     public $adminInitials = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 255
+     * @width       255
      */
     public $adminFullFirstNames = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $adminFirstName = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 60
+     * @width       60
      */
     public $adminLastName = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $adminLastNamePrefix = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 40
+     * @width       40
      */
     public $adminSofiNumber = null;
 
     /**
-     * @cx_field true
-     * @access private
+     * @cx_field    true
+     * @access      private
      * @var string
      * @value_class NSString
      * @allows_null 1
-     * @width 12
+     * @width       12
      */
     public $initials = null;
 
@@ -932,19 +931,21 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Collection $values
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CREmployee
      */
     public function setGroupNodes($values)
     {
-        $this->toUser = (is_null($this->toUser))? new Carerix_Api_Rest_Entity_CRUser(): $this->toUser;
+        $this->toUser = (is_null($this->toUser)) ? new Carerix_Api_Rest_Entity_CRUser() : $this->toUser;
         $this->toUser->setGroupNodes($values);
         return $this;
     }
-    
+
     /**
      * Get groupNodes.
      *
      * @param $index [optional] integer get an item at specified index
+     *
      * @return Carerix_Api_Rest_Collection|Carerix_Api_Rest_Entity_CRDataNode
      */
     public function getGroupNodes($index = null)
@@ -953,55 +954,58 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
             return $this->toUser->getGroupNodes($index);
         }
     }
-    
+
     /**
      * Set groups.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Collection $values
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_CREmployee
      */
     public function setGroups($values)
     {
-        if(is_array($values)) {
+        if (is_array($values)) {
             $values = new Carerix_Api_Rest_Collection($values, 'Carerix_Api_Rest_Entity_CRDataNode');
         }
         $this->groups = $values;
         return $this;
     }
-    
+
     /**
      * Get groups.
      *
      * @param $index [optional] integer get an item at specified index
+     *
      * @return Carerix_Api_Rest_Collection|Carerix_Api_Rest_Entity_CRDataNode
      */
     public function getGroups($index = null)
     {
-        if($index !== null) {
+        if ($index !== null) {
             return $this->groups[$index];
         }
         return $this->groups;
     }
-    
+
     /**
      * Set toMinSalaryPeriodNode.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return self
      */
     public function setToMinSalaryPeriodNode($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toMinSalaryPeriodNode = $value;
         return $this;
     }
-    
+
     /**
      * Get toMinSalaryPeriodNode.
      *
@@ -1011,24 +1015,25 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->toMinSalaryPeriodNode;
     }
-    
+
     /**
      * Set toProductTypeNode3.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return self
      */
     public function setToProductTypeNode3($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toProductTypeNode3 = $value;
         return $this;
     }
-    
+
     /**
      * Get toProductTypeNode3.
      *
@@ -1038,24 +1043,25 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->toProductTypeNode3;
     }
-    
+
     /**
      * Set toProductTypeNode2.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return self
      */
     public function setToProductTypeNode2($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toProductTypeNode2 = $value;
         return $this;
     }
-    
+
     /**
      * Get toProductTypeNode2.
      *
@@ -1065,24 +1071,25 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->toProductTypeNode2;
     }
-    
+
     /**
      * Set toProductTypeNode1.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return self
      */
     public function setToProductTypeNode1($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toProductTypeNode1 = $value;
         return $this;
     }
-    
+
     /**
      * Get toProductTypeNode1.
      *
@@ -1092,24 +1099,25 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->toProductTypeNode1;
     }
-    
+
     /**
      * Set toPovinceNode.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return self
      */
     public function setToPovinceNode($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toPovinceNode = $value;
         return $this;
     }
-    
+
     /**
      * Get toPovinceNode.
      *
@@ -1119,58 +1127,60 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->toPovinceNode;
     }
-   
-     
+
+
     /**
      * Gets toHomeProvinceNode
      *
      * @return Carerix_Api_Rest_Entity_CRDataNode
      */
-    public function getToHomeProvinceNode() 
+    public function getToHomeProvinceNode()
     {
         return $this->toHomeProvinceNode;
     }
-    
+
     /**
      * Sets toHomeProvinceNode
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $toHomeProvinceNode $value
+     *
      * @return self
      */
-    public function setToHomeProvinceNode($value) 
+    public function setToHomeProvinceNode($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toHomeProvinceNode = $value;
         return $this;
     }
-    
+
     /**
      * Gets toHomeCountryNode
      *
      * @return Carerix_Api_Rest_Entity_CRDataNode
      */
-    public function getToHomeCountryNode() 
+    public function getToHomeCountryNode()
     {
         return $this->toHomeCountryNode;
     }
-    
+
     /**
      * Sets toHomeCountryNode
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $toHomeCountryNode $value
+     *
      * @return self
      */
-    public function setToHomeCountryNode($value) 
+    public function setToHomeCountryNode($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toHomeCountryNode = $value;
         return $this;
     }
-    
+
     /**
      * Gets homePostalCode
      *
@@ -1180,19 +1190,20 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->homePostalCode;
     }
-    
+
     /**
      * Sets homePostalCode
      *
      * @param string $homePostalCode homePostalCode
+     *
      * @return self
      */
-    public function setHomePostalCode($homePostalCode) 
+    public function setHomePostalCode($homePostalCode)
     {
         $this->homePostalCode = $homePostalCode;
         return $this;
     }
-    
+
     /**
      * Gets homeNumberSuffix
      *
@@ -1202,19 +1213,20 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->homeNumberSuffix;
     }
-    
+
     /**
      * Sets homeNumberSuffix
      *
      * @param string $homeNumberSuffix homeNumberSuffix
+     *
      * @return self
      */
-    public function setHomeNumberSuffix($homeNumberSuffix) 
+    public function setHomeNumberSuffix($homeNumberSuffix)
     {
         $this->homeNumberSuffix = $homeNumberSuffix;
         return $this;
     }
-    
+
     /**
      * Gets homeNumber
      *
@@ -1224,19 +1236,20 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->homeNumber;
     }
-    
+
     /**
      * Sets homeNumber
      *
      * @param string $homeNumber homeNumber
+     *
      * @return self
      */
-    public function setHomeNumber($homeNumber) 
+    public function setHomeNumber($homeNumber)
     {
         $this->homeNumber = $homeNumber;
         return $this;
     }
-    
+
     /**
      * Gets homeStreet
      *
@@ -1246,19 +1259,20 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->homeStreet;
     }
-    
+
     /**
      * Sets homeStreet
      *
      * @param string $homeStreet homeStreet
+     *
      * @return self
      */
-    public function setHomeStreet($homeStreet) 
+    public function setHomeStreet($homeStreet)
     {
         $this->homeStreet = $homeStreet;
         return $this;
     }
-    
+
     /**
      * Gets birthDate
      *
@@ -1268,98 +1282,103 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->birthDate;
     }
-    
+
     /**
      * Sets birthDate
      *
      * @param string $birthDate birthDate
+     *
      * @return self
      */
-    public function setBirthDate($birthDate) 
+    public function setBirthDate($birthDate)
     {
         $this->birthDate = $birthDate;
         return $this;
     }
-    
+
     /**
      * Gets suffix
      *
      * @return string
      */
-    public function getSuffix() 
+    public function getSuffix()
     {
         return $this->suffix;
     }
-    
+
     /**
      * Sets suffix
      *
      * @param string $suffix suffix
+     *
      * @return self
      */
-    public function setSuffix($suffix) 
+    public function setSuffix($suffix)
     {
         $this->suffix = $suffix;
         return $this;
     }
-    
+
     /**
      * Gets title
      *
      * @return string
      */
-    public function getTitle() 
+    public function getTitle()
     {
         return $this->title;
     }
-    
+
     /**
      * Sets title
      *
      * @param string $title title
+     *
      * @return self
      */
-    public function setTitle($title) 
+    public function setTitle($title)
     {
         $this->title = $title;
         return $this;
     }
-    
+
     /**
      * Gets initials
      *
      * @return string
      */
-    public function getInitials() 
+    public function getInitials()
     {
         return $this->initials;
     }
-    
+
     /**
      * Sets initials
      *
      * @param string $initials initials
+     *
      * @return self
      */
-    public function setInitials($initials) 
+    public function setInitials($initials)
     {
         $this->initials = $initials;
         return $this;
     }
-    
+
     /**
      * Set emailAddresses
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Collection $values
+     *
      * @return Carerix_Api_Rest_Entity_CREmailAddress
      */
     public function setEmailAddresses($values)
     {
-        if(is_array($values)) {
-            $values = new Carerix_Api_Rest_Collection($values, 'Carerix_Api_Rest_Entity_CREmailAddress'); 
-        } 
+        if (is_array($values)) {
+            $values = new Carerix_Api_Rest_Collection($values, 'Carerix_Api_Rest_Entity_CREmailAddress');
+        }
         $this->emailAddresses = $values;
         return $this;
     }
@@ -1368,318 +1387,333 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
      * Get emailAddresses.
      *
      * @param $index [optional] integer get an item at specified index
+     *
      * @return Carerix_Api_Rest_Collection|Carerix_Api_Rest_Entity_CREmailAddress
      */
     public function getEmailAddresses($index = null)
     {
-        if($index !== null) {
+        if ($index !== null) {
             return $this->emailAddresses[$index];
         }
         return $this->emailAddresses;
     }
-         
+
     /**
      * Gets fullAddress
      *
      * @return string
      */
-    public function getFullAddress() 
+    public function getFullAddress()
     {
         return $this->fullAddress;
     }
-    
+
     /**
      * Sets fullAddress
      *
      * @param string $fullAddress fullAddress
+     *
      * @return self
      */
-    public function setFullAddress($fullAddress) 
+    public function setFullAddress($fullAddress)
     {
         $this->fullAddress = $fullAddress;
         return $this;
     }
-    
+
     /**
      * Gets city
      *
      * @return string
      */
-    public function getCity() 
+    public function getCity()
     {
         return $this->city;
     }
-    
+
     /**
      * Sets city
      *
      * @param string $city city
+     *
      * @return self
      */
-    public function setCity($city) 
+    public function setCity($city)
     {
         $this->city = $city;
         return $this;
-    }    
-            
+    }
+
     /**
      * Gets emailAddress
      *
      * @return string
      */
-    public function getEmailAddress() 
+    public function getEmailAddress()
     {
         return $this->emailAddress;
     }
-    
+
     /**
      * Sets emailAddress
      *
      * @param string $emailAddress emailAddress
+     *
      * @return self
      */
-    public function setEmailAddress($emailAddress) 
+    public function setEmailAddress($emailAddress)
     {
         $this->emailAddress = $emailAddress;
         return $this;
     }
-        
+
     /**
      * Gets emailAddressBusiness
      *
      * @return string
      */
-    public function getEmailAddressBusiness() 
+    public function getEmailAddressBusiness()
     {
         return $this->emailAddressBusiness;
     }
-    
+
     /**
      * Sets emailAddressBusiness
      *
      * @param string $emailAddressBusiness emailAddressBusiness
+     *
      * @return self
      */
-    public function setEmailAddressBusiness($emailAddressBusiness) 
+    public function setEmailAddressBusiness($emailAddressBusiness)
     {
         $this->emailAddressBusiness = $emailAddressBusiness;
         return $this;
     }
-        
+
     /**
      * Gets phoneNumberBusiness
      *
      * @return string
      */
-    public function getPhoneNumberBusiness() 
+    public function getPhoneNumberBusiness()
     {
         return $this->phoneNumberBusiness;
     }
-    
+
     /**
      * Sets phoneNumberBusiness
      *
      * @param string $phoneNumberBusiness phoneNumberBusiness
+     *
      * @return self
      */
-    public function setPhoneNumberBusiness($phoneNumberBusiness) 
+    public function setPhoneNumberBusiness($phoneNumberBusiness)
     {
         $this->phoneNumberBusiness = $phoneNumberBusiness;
         return $this;
     }
-        
+
     /**
      * Gets phoneNumber
      *
      * @return string
      */
-    public function getPhoneNumber() 
+    public function getPhoneNumber()
     {
         return $this->phoneNumber;
     }
-    
+
     /**
      * Sets phoneNumber
      *
      * @param string $phoneNumber phoneNumber
+     *
      * @return self
      */
-    public function setPhoneNumber($phoneNumber) 
+    public function setPhoneNumber($phoneNumber)
     {
         $this->phoneNumber = $phoneNumber;
         return $this;
     }
-        
+
     /**
      * Gets mobileNumber
      *
      * @return string
      */
-    public function getMobileNumber() 
+    public function getMobileNumber()
     {
         return $this->mobileNumber;
     }
-    
+
     /**
      * Sets mobileNumber
      *
      * @param string $mobileNumber mobileNumber
+     *
      * @return self
      */
-    public function setMobileNumber($mobileNumber) 
+    public function setMobileNumber($mobileNumber)
     {
         $this->mobileNumber = $mobileNumber;
         return $this;
     }
-        
+
     /**
      * Gets mobileNumberBusiness
      *
      * @return string
      */
-    public function getMobileNumberBusiness() 
+    public function getMobileNumberBusiness()
     {
         return $this->mobileNumberBusiness;
     }
-    
+
     /**
      * Sets mobileNumberBusiness
      *
      * @param string $mobileNumberBusiness mobileNumberBusiness
+     *
      * @return self
      */
-    public function setMobileNumberBusiness($mobileNumberBusiness) 
+    public function setMobileNumberBusiness($mobileNumberBusiness)
     {
         $this->mobileNumberBusiness = $mobileNumberBusiness;
         return $this;
     }
-        
+
     /**
      * Gets firstName
      *
      * @return string
      */
-    public function getFirstName() 
+    public function getFirstName()
     {
         return $this->firstName;
     }
-    
+
     /**
      * Sets firstName
      *
      * @param string $firstName firstName
+     *
      * @return self
      */
-    public function setFirstName($firstName) 
+    public function setFirstName($firstName)
     {
         $this->firstName = $firstName;
         return $this;
     }
-    
+
     /**
      * Gets lastName
      *
      * @return string
      */
-    public function getLastName() 
+    public function getLastName()
     {
         return $this->lastName;
     }
-    
+
     /**
      * Sets lastName
      *
      * @param string $lastName lastName
+     *
      * @return self
      */
-    public function setLastName($lastName) 
+    public function setLastName($lastName)
     {
         $this->lastName = $lastName;
         return $this;
     }
-    
+
     /**
      * Gets lastNamePrefix
      *
      * @return string
      */
-    public function getLastNamePrefix() 
+    public function getLastNamePrefix()
     {
         return $this->lastNamePrefix;
     }
-    
+
     /**
      * Sets lastNamePrefix
      *
      * @param string $lastNamePrefix lastNamePrefix
+     *
      * @return self
      */
-    public function setLastNamePrefix($lastNamePrefix) 
+    public function setLastNamePrefix($lastNamePrefix)
     {
         $this->lastNamePrefix = $lastNamePrefix;
         return $this;
     }
-        
+
     /**
      * Gets toCountryNode
      *
      * @return Carerix_Api_Rest_Entity_CRDataNode
      */
-    public function getToCountryNode() 
+    public function getToCountryNode()
     {
         return $this->toCountryNode;
     }
-    
+
     /**
      * Sets toCountryNode
      *
      * @param Carerix_Api_Rest_Entity_CRDataNode $toCountryNode toCountryNode
+     *
      * @return self
      */
-    public function setToCountryNode($toCountryNode) 
+    public function setToCountryNode($toCountryNode)
     {
         $this->toCountryNode = $toCountryNode;
         return $this;
     }
-        
+
     /**
      * Gets toGenderNode
      *
      * @return Carerix_Api_Rest_Entity_CRDataNode
      */
-    public function getToGenderNode() 
+    public function getToGenderNode()
     {
         return $this->toGenderNode;
     }
-    
+
     /**
      * Sets toGenderNode
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $toGenderNode $value
+     *
      * @return self
      */
-    public function setToGenderNode($value) 
+    public function setToGenderNode($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
         }
         $this->toGenderNode = $value;
         return $this;
     }
-       
+
     /**
      * Set toStatusNode.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRDataNode $value
+     *
      * @return Carerix_Api_Rest_Entity_Abstract_Employee
      */
     public function setToStatusNode($value)
     {
-        if(is_array($value)) {
-            $value = new Carerix_Api_Rest_Entity_CRDataNode($value); 
-        }                 
+        if (is_array($value)) {
+            $value = new Carerix_Api_Rest_Entity_CRDataNode($value);
+        }
         $this->toStatusNode = $value;
         return $this;
     }
@@ -1693,7 +1727,7 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->toStatusNode;
     }
-    
+
     /**
      * Get owner.
      *
@@ -1703,24 +1737,25 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->owner;
     }
-    
+
     /**
      * Set owner.
      *
      * Provides a fluent interface.
      *
      * @param array|Carerix_Api_Rest_Entity_CRUser $value
+     *
      * @return Carerix_Api_Rest_Entity_CRUser
      */
     public function setOwner($value)
     {
-        if(is_array($value)) {
+        if (is_array($value)) {
             $value = new Carerix_Api_Rest_Entity_CRUser($value);
         }
         $this->owner = $value;
         return $this;
     }
-    
+
     /**
      * alias for _todos setter
      */
@@ -1728,7 +1763,7 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->set_todos($values);
     }
-    
+
     /**
      * alias for _todos getter
      */
@@ -1736,16 +1771,17 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
     {
         return $this->get_todos();
     }
-        
+
     /**
      * Get employee by username and password
-     * 
-     * @param array $parameters 
+     *
+     * @param array $parameters
+     *
      * @return Carerix_Api_Rest_Entity_Employee
-     * 
-     * @see http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#GET_employee.2Fget-by
+     *
+     * @see    http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#GET_employee.2Fget-by
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
-     */    
+     */
     public static function getBy(array $parameters)
     {
         $action = 'get-by';
@@ -1757,31 +1793,32 @@ class Carerix_Api_Rest_Entity_CREmployee extends Carerix_Api_Rest_Entity_Abstrac
             $parameters
         );
     }
-    
+
     /**
-     * Create or modify an employee object and perform additional tasks in one go. 
-     * 
+     * Create or modify an employee object and perform additional tasks in one go.
+     *
      * @param array $parameters [optional]
+     *
      * @return Carerix_Api_Rest_Entity_Employee
-     * 
-     * @see http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#POST_employee.2Fapply
+     *
+     * @see    http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest_api_methods#POST_employee.2Fapply
      * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
-     */        
+     */
     public function apply($parameters = null)
     {
         $method = $this->exists() ? 'put' : 'post';
         return $this->$method('apply', $parameters);
     }
-    
+
     /**
      * (non-PHPdoc)
-     * @see Carerix_Api_Rest_Entity::subscribe()
+     *
      * @return Carerix_Api_Rest_Entity_Employee
+     * @see Carerix_Api_Rest_Entity::subscribe()
      */
     public function subscribe()
     {
         $args = func_get_args();
-        return call_user_func_array(array('parent', 'subscribe'), $args);    
+        return call_user_func_array(['parent', 'subscribe'], $args);
     }
-
 }

@@ -1,21 +1,22 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 /*
  *  $Id$
  *
@@ -57,11 +58,11 @@ class Carerix_Api_Rest_ResponseTransformer_StandardResponseTransformer extends C
                 return $this->xmlToArray($data);
             case 'json':
                 return $this->jsonToArray($data);
-            break;
+                break;
         }
     }
 
-    public function xmlToArray($object, &$array = array())
+    public function xmlToArray($object, &$array = [])
     {
         if (is_string($object)) {
             $object = new SimpleXMLElement($object);
@@ -75,25 +76,25 @@ class Carerix_Api_Rest_ResponseTransformer_StandardResponseTransformer extends C
                     $this->xmlToArray($node, $array[$elementName][$i]);
                 } else {
                     $tmp = $array[$elementName];
-                    $array[$elementName] = array();
+                    $array[$elementName] = [];
                     $array[$elementName][0] = $tmp;
-                    $i = count($array[$elementName]);                
+                    $i = count($array[$elementName]);
                     $this->xmlToArray($node, $array[$elementName][$i]);
                 }
             } else {
-                $array[$elementName] = array();
+                $array[$elementName] = [];
                 $this->xmlToArray($node, $array[$elementName]);
             }
             $executed = true;
         }
-        if ( ! $executed && ! $children->getName()) {
-            $array = (string) $object;
+        if (!$executed && !$children->getName()) {
+            $array = (string)$object;
         }
         return $array;
     }
 
     public function jsonToArray($json)
     {
-        return (array) json_decode($json);
+        return (array)json_decode($json);
     }
 }

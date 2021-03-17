@@ -1,21 +1,22 @@
 <?php
+
 /**
  * Carerix PHP Library
  *
  * LICENSE
  *
- * This source file is subject to the LGPL license that is 
+ * This source file is subject to the LGPL license that is
  * available through the world-wide-web at this URL:
  * http://www.opensource.org/licenses/lgpl-license.php
  *
- * @category Carerix
- * @author Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
+ * @category  Carerix
+ * @author    Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  * @copyright Copyright (c) 2020 Carerix.com (http://www.carerix.com)
- * @license http://www.opensource.org/licenses/lgpl-license.php  LGPL
- * @link http://www.carerix.com
- * @version 2020-03-27 16:24:40Z
+ * @license   http://www.opensource.org/licenses/lgpl-license.php  LGPL
+ * @link      http://www.carerix.com
+ * @version   2020-03-27 16:24:40Z
  */
- 
+
 /*
  *  $Id$
  *
@@ -36,11 +37,11 @@
  * <http://www.doctrine-project.org>.
 */
 
-if(!class_exists('Carerix_Api_Rest_URLGenerator_StandardURLGenerator')) {
+if (!class_exists('Carerix_Api_Rest_URLGenerator_StandardURLGenerator')) {
     require_once 'Carerix/Api/Rest/URLGenerator/StandardURLGenerator.php';
 }
 
-if(!class_exists('Carerix_Api_Rest_ResponseTransformer_StandardResponseTransformer')) {
+if (!class_exists('Carerix_Api_Rest_ResponseTransformer_StandardResponseTransformer')) {
     require_once 'Carerix/Api/Rest/ResponseTransformer/StandardResponseTransformer.php';
 }
 
@@ -48,40 +49,39 @@ if(!class_exists('Carerix_Api_Rest_ResponseTransformer_StandardResponseTransform
  * Entity configuration class holds all the configuration information for a PHP5
  * object entity that maps to a REST service.
  *
- * @license     http://www.opensource.org/licenses/lgpl-license.php LGPL
- * @link        www.doctrine-project.org
- * @since       2.0
- * @version     $Revision$
- * @author      Jonathan H. Wage <jonwage@gmail.com>
+ * @license        http://www.opensource.org/licenses/lgpl-license.php LGPL
+ * @link           www.doctrine-project.org
+ * @since          2.0
+ * @version        $Revision$
+ * @author         Jonathan H. Wage <jonwage@gmail.com>
  * @author         Andrey Yakubovskiy <andrey.yakubovskiy@gmail.com>
  */
-
 class Carerix_Api_Rest_EntityConfiguration
 {
     /**
      * @var object
-     */    
+     */
     private $_prototype;
-    
+
     /**
      * @var ReflectionClass
      */
     private $_reflection;
-    
-    /**
-     * @var array
-     */
-    private $_properties = array();
-    
-    /**
-     * @var array
-     */    
-    private $_reflectionProperties = array();
 
     /**
      * @var array
-     */    
-    private $_attributes = array(
+     */
+    private $_properties = [];
+
+    /**
+     * @var array
+     */
+    private $_reflectionProperties = [];
+
+    /**
+     * @var array
+     */
+    private $_attributes = [
         'class' => null,
         'url' => null,
         'name' => null,
@@ -92,19 +92,22 @@ class Carerix_Api_Rest_EntityConfiguration
         'urlGeneratorImpl' => null,
         'responseTransformerImpl' => null,
         'proxy' => null,
-    );
+    ];
 
     /**
      * Constructor
-     * 
+     *
      * @param string $class
+     *
      * @return void
      */
     public function __construct($class)
     {
         $this->_attributes['class'] = $class;
         $this->_attributes['urlGeneratorImpl'] = new Carerix_Api_Rest_URLGenerator_StandardURLGenerator($this);
-        $this->_attributes['responseTransformerImpl'] = new Carerix_Api_Rest_ResponseTransformer_StandardResponseTransformer($this);
+        $this->_attributes['responseTransformerImpl'] = new Carerix_Api_Rest_ResponseTransformer_StandardResponseTransformer(
+            $this
+        );
 
         $this->_reflection = new ReflectionClass($class);
         foreach ($this->_reflection->getProperties() as $property) {
@@ -139,11 +142,12 @@ class Carerix_Api_Rest_EntityConfiguration
     }
 
     /**
-     * Set value. 
-     * 
+     * Set value.
+     *
      * @param Carerix_Api_Rest_Entity $entity
-     * @param string $field
-     * @param mixed $value
+     * @param string                  $field
+     * @param mixed                   $value
+     *
      * @return void
      */
     public function setValue(Carerix_Api_Rest_Entity $entity, $field, $value)
@@ -157,14 +161,15 @@ class Carerix_Api_Rest_EntityConfiguration
 
     /**
      * Get value.
-     * 
+     *
      * @param Carerix_Api_Rest_Entity $entity
-     * @param string $field
+     * @param string                  $field
+     *
      * @return mixed null if the field doesn't exist
      */
     public function getValue(Carerix_Api_Rest_Entity $entity, $field)
     {
-        if(array_key_exists($field, $this->_reflectionProperties)) {
+        if (array_key_exists($field, $this->_reflectionProperties)) {
             return $this->_reflectionProperties[$field]->getValue($entity);
         }
         return null;
@@ -176,8 +181,9 @@ class Carerix_Api_Rest_EntityConfiguration
     }
 
     /**
-     * 
+     *
      * @param string $proxy
+     *
      * @author Andrey Yakubovskiy
      */
     public function setProxy($proxy)
@@ -187,15 +193,15 @@ class Carerix_Api_Rest_EntityConfiguration
     }
 
     /**
-     * 
-     * @author Andrey Yakubovskiy
+     *
      * @return string
+     * @author Andrey Yakubovskiy
      */
     public function getProxy()
     {
         return $this->_attributes['proxy'];
     }
-        
+
     public function setUrl($url)
     {
         $this->_attributes['url'] = rtrim($url, '/');
@@ -298,11 +304,13 @@ class Carerix_Api_Rest_EntityConfiguration
     public function newInstance()
     {
         if ($this->_prototype === null) {
-            $this->_prototype = unserialize(sprintf(
-                'O:%d:"%s":0:{}',
-                strlen($this->_attributes['class']),
-                $this->_attributes['class']
-            ));
+            $this->_prototype = unserialize(
+                sprintf(
+                    'O:%d:"%s":0:{}',
+                    strlen($this->_attributes['class']),
+                    $this->_attributes['class']
+                )
+            );
         }
         return clone $this->_prototype;
     }
