@@ -236,11 +236,15 @@ abstract class Carerix_Api_Rest_Entity
         $origVars = self::getObjectVars($context->snapshot);
         $userVars = self::getObjectVars($context);
 
-        // requires object being compared implement __toString magic method
-        // [AY] causes an issue. see http://stackoverflow.com/questions/4742405/array-diff-problem
-        // reported and fixed by Jasper Stafleu
-//        return array_diff($userVars, $origVars);
-        return array_diff_assoc($userVars, $origVars);
+        $modified = [];
+        foreach ($userVars as $key => $value) {
+            if (!isset($origVars[$key]) || (!is_object($origVars[$key]) && !is_array(
+                        $origVars[$key]
+                    )) && $origVars[$key] !== $userVars[$key]) {
+                $modified[$key] = $value;
+            }
+        }
+        return $modified;
     }
 
     /**
