@@ -1,3 +1,6 @@
+DO NOT USE THIS LIBRARY. IT IS DEPRECATED. CARERIX HAS THEIR OWN COMPOSER LIBRARY NOW. USE THAT ONE.
+-----
+
 # Carerix
 Migration of the Carerix library
 
